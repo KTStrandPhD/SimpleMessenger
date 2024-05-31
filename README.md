@@ -58,5 +58,7 @@ This makefile creates three separate execuatbles
 
 
 Kyle Strand, Ph.D
+
 ktstrandphd@gmail.com
+
 30 May 2024
