@@ -1,0 +1,18 @@
+Dynon Coding Project - Kyle Strand
+
+For this project we would like you to demonstrate an IPC methodology. You are free to choose how you do it as long as it abides by the requirements below.
+
+	Language: C and/or C++
+	Must compile and run on Ubuntu 22.04.
+	Must pass the following data structure through the IPC process.
+	{
+		int,
+		float,
+		string data (C or C++ formatted your choice)
+		enum { type1, type2, type3 }
+	}
+	The receiving side should print out at minimum 10 different versions of the structure above in the following format:
+		int: {value}, float: {value}, string: {value}, enum {human readable, e.g type1}    -> Does this mean just give 10 inputs?
+	Code should be in a git repository so we can pull it and compile it for testing.
+
+There is no time limit on this project. Feel free to reach out if you have any questions. We look forward to evaluating your project.

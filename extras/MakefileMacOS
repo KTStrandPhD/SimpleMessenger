@@ -1,0 +1,19 @@
+#This is the Makefile used to compile on a MacBookPro arm64, Sonoma 14.2.1 
+
+#This make file builds three executables.
+#OneShotSndRcv sends and receives a messages at once
+#SendMessage and ReceiveMessage are separate process which can be called at anytime
+
+all: OneShotSndRcv SendMessage ReceiveMessage
+
+OneShotSndRcv:
+	g++ -I /opt/homebrew/Cellar/boost/1.85.0/include -L /opt/homebrew/Cellar/boost/1.85.0/lib -std=c++11 -lboost_serialization -o OneShotSndRcv  src/SimpleMessenger.cxx src/OneShotSndRcv.cxx src/MsgQueue.cxx
+
+SendMessage:
+	g++ -I /opt/homebrew/Cellar/boost/1.85.0/include -L /opt/homebrew/Cellar/boost/1.85.0/lib -std=c++11 -lboost_serialization -o SendMessage src/SimpleMessenger.cxx src/SendMessage.cxx src/MsgQueue.cxx
+
+ReceiveMessage:
+	g++ -I /opt/homebrew/Cellar/boost/1.85.0/include -L /opt/homebrew/Cellar/boost/1.85.0/lib -std=c++11 -lboost_serialization -o ReceiveMessage src/SimpleMessenger.cxx src/ReceiveMessage.cxx src/MsgQueue.cxx
+
+clean:
+	rm OneShotSndRcv SendMessage ReceiveMessage
