@@ -6,7 +6,7 @@
 
 int main() {
 
-	srand(time(NULL));				//Seeding RNG
+	srand(time(NULL));					//Seeding RNG
 	SendMessage();						//Send message to queue
 
 	return 0;
