@@ -5,6 +5,7 @@
 2. Project Instructions
 3. Installation
 4. Program Usage
+5. References
    
 ### 1. Project Description
 A simple messenger built using boost::interprocess. This is a coding project for an interview Dynon Avionics. This application creates a class object containing all of the project requirements, randomizes the input data, and then sends it through IPC messaging queue. The application then receives the message and prints the output.
@@ -48,13 +49,24 @@ This makefile creates three separate execuatbles
   **NOTE**
   The Makefile in the root folder is used to compile on linux distributions. If you are wishing to install this on MacOS, please use 'MakefileMacOS' found in 'extras' folder.
 
-  ### 4. Program Usage
-  This application can be run in a few different ways
+### 4. Program Usage
+This application can be run in a few different ways
 
   1. Run OneShotSndRcv to send and receive message through a single process
   2. Run SendMessage followed by ReceiveMessage. This will run the send and receive messages across two process.
+  
+  The application is currently set to send and receive 10 messages. This can be generalized, but I had to pass that up due to time constraints.
 
-  The application is currently set to send and receive 10 messages. This can be abstracted, but I had to pass that up due to time constraints.
+### 5. References
+Here's a list of documents I found useful while developing this:
+
+   * https://www.boost.org/doc/libs/1_79_0/libs/serialization/doc/tutorial.html
+   
+   * https://www.boost.org/doc/libs/1_85_0/boost/serialization/serialization.hpp
+   
+   * https://www.boost.org/doc/libs/1_54_0/doc/html/interprocess.html
+   
+   * https://www.boost.org/doc/libs/1_84_0/boost/interprocess/interprocess_fwd.hpp
 
 
 Kyle Strand, Ph.D
