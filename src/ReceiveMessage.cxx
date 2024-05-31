@@ -6,7 +6,7 @@
 
 int main() {
 
-  ReceiveMessage();					//Receive and print message
+    ReceiveMessage();					//Receive and print message
 
-  return 0;
+    return 0;
 }
