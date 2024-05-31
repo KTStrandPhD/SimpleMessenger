@@ -28,7 +28,7 @@ class SimpleMessenger {
 
 		std::map <int, std::string> enumMap;						//To be used to map to human readable enums
 		std::string names[20] = {"Kyle", "Tucker", "Grace", "Gwendolyn", "Clare", "Scott", "Caroline", "Steve", "Bill", "Kurt", 
-											"Alexandra", "John", "Erica", "Pim", "Bart", "Gerard", "Mohammed", "Murphy", "Joe", "Harriet"};
+					"Alexandra", "John", "Erica", "Pim", "Bart", "Gerard", "Mohammed", "Murphy", "Joe", "Harriet"};
 
 		int RandomizeInt();
 		float RandomizeFloat();
