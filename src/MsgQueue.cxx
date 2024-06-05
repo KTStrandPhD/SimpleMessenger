@@ -11,9 +11,8 @@ void SendMessage() {
   //Utilizing boost try-catch for error control
 	BOOST_TRY{
 		message_queue::remove("message_queue");                                       //Clears "message_queue"
-		MessengerDemo sendData(true);                                                 //Create and populate first data object
 
-		message_queue mq(create_only, "message_queue", 100, sizeof(sendData));	      //Create message_queue object, we choose create_only to only add to the message queue
+		message_queue mq(create_only, "message_queue", 100, sizeof(MessengerDemo));	      //Create message_queue object, we choose create_only to only add to the message queue
 		for (int i = 0; i < 10; i++) { 
 
 			MessengerDemo sendData(true);																		            //Create MessengerDemo object
